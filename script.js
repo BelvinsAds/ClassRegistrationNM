@@ -102,7 +102,8 @@ function sendEmailList() {
 function sendEmailGuest() {
     var params = {
         Guest_First_Name: Guest_First_Name.value,
-        ClassNameType: ClassNameType
+        ClassNameType: ClassNameType,
+        Guest_Email: GuestEmail.value
     }
     emailjs.send("service_ngjmswq","template_s5p49f8", params);
 }
